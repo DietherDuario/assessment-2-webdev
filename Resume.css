@@ -1,0 +1,162 @@
+/* Base setup */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  background: 
+    linear-gradient(rgba(27, 36, 48, 0.7), rgba(27, 36, 48, 0.7)),
+    url('https://i.redd.it/lpq6o2autx761.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navigation bar */
+header {
+  background-color: rgba(44, 62, 80, 0.85);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a[aria-current="page"] {
+  background-color: #357eff;
+}
+
+/* Main layout */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 20px;
+  position: relative;
+}
+
+.resume-section {
+  background-color: rgba(27, 36, 48, 0.85);
+  max-width: 800px;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.resume-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #add8ff;
+}
+
+.resume-section .tagline {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.resume-section h2 {
+  margin-top: 30px;
+  font-size: 1.4rem;
+  border-bottom: 2px solid #357eff;
+  padding-bottom: 6px;
+  color: #f0f4f8;
+}
+
+.resume-section p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.skill-list {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+/* Sidebar */
+.side-panel {
+  position: absolute;
+  top: 160px;
+  right: 40px;
+  width: 250px;
+  background-color: rgba(53, 126, 255, 0.2);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+.side-panel h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.side-panel ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-panel ul li {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #f0f4f8;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(44, 62, 80, 0.85);
+  color: #ccc;
+  text-align: center;
+  padding: 15px 0;
+  font-weight: 500;
+}
+
+/* Responsive tweaks */
+@media (max-width: 1000px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .side-panel {
+    position: static;
+    width: 100%;
+    margin-top: 30px;
+    max-width: 600px;
+    background-color: rgba(53, 126, 255, 0.3);
+  }
+
+  .resume-section {
+    width: 100%;
+    padding: 30px;
+  }
+}

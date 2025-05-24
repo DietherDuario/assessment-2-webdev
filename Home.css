@@ -1,0 +1,144 @@
+/* Basic reset & full-height setup */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navigation bar */
+header {
+  background-color: #1b2430;
+  padding: 12px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+  background-color: #357eff;
+}
+
+/* Main content area */
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('https://i.redd.it/lpq6o2autx761.jpg') no-repeat center center/cover;
+  position: relative;
+  padding: 50px 20px;
+  text-align: center;
+  color: white;
+}
+
+.hero {
+  position: relative;
+  max-width: 600px;
+  z-index: 2;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(27, 36, 48, 0.7);
+  z-index: 1;
+  border-radius: 12px;
+}
+
+/* Profile Picture */
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 4px solid #357eff;
+  margin-bottom: 20px;
+  z-index: 3;
+  position: relative;
+  box-shadow: 0 0 15px rgba(53, 126, 255, 0.7);
+}
+
+/* Hero Text */
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+  z-index: 3;
+  position: relative;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  z-index: 3;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  align-items: center;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
+}
+
+/* Icon styles */
+.icon {
+  width: 24px;
+  height: 24px;
+  filter: drop-shadow(0 0 2px rgba(0,0,0,0.7));
+}
+
+/* Button */
+.btn {
+  background-color: #357eff;
+  color: white;
+  padding: 14px 30px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 12px rgba(53, 126, 255, 0.5);
+  z-index: 3;
+  position: relative;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #1a5edb;
+  box-shadow: 0 8px 20px rgba(26, 94, 219, 0.7);
+  outline: none;
+}
+
+/* Footer */
+footer {
+  background-color: #1b2430;
+  color: #ccc;
+  text-align: center;
+  padding: 18px 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
