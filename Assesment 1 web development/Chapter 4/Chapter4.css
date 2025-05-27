@@ -1,0 +1,127 @@
+/* Basic reset and fonts */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body and HTML need full height for sticky footer */
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Container holds everything and enables sticky footer */
+.container {
+  display: flex;             /* Enable flexbox layout */
+  flex-direction: column;    /* Stack children vertically */
+  min-height: 100vh;         /* Take full screen height */
+}
+
+/* HEADER */
+header {
+  background-color: #17072b; /* Dark purple background */
+  color: #ffffff;            /* White text */
+  text-align: center;
+  padding: 20px;
+  font-family: Tahoma, sans-serif;
+  font-weight: 700;
+}
+
+/* NAVIGATION */
+nav {
+  background-color: #17072b;
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* MAIN CONTENT AREA */
+.main-content {
+  display: flex;             /* Side by side layout */
+  flex: 1;                   /* Grow to fill remaining space */
+  padding: 20px;
+}
+
+/* WELCOME SECTION */
+main {
+  flex: 2;
+  padding-right: 20px;
+}
+
+main h2 {
+  font-family: Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #17072b;
+  display: inline-block;
+}
+
+main p {
+  margin-bottom: 20px;
+}
+
+/* Coding image */
+main img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* SIDEBAR - LINE UP */
+aside {
+  flex: 1;
+  background-color: #172d67; /* Blue background */
+  color: white;
+  padding: 20px;
+}
+
+aside h3 {
+  font-family: Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom: 3px solid white;
+  margin-bottom: 15px;
+}
+
+aside ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+aside li {
+  margin-bottom: 10px;
+}
+
+/* Line up images */
+aside .lineup-images {
+  display: flex;
+  justify-content: space-between;
+}
+
+aside .lineup-images img {
+  width: 48%;
+  height: auto;
+}
+
+/* FOOTER */
+footer {
+  background-color: #8c15e9; /* Footer purple */
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}

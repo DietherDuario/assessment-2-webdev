@@ -1,0 +1,26 @@
+/* plot.css */
+
+/* Section Styles */
+section {
+    margin: 20px; /* Adds space around each section */
+    padding: 20px; /* Adds padding inside each section */
+    background-color: #fff; /* White background for the sections */
+    border-radius: 8px; /* Rounded corners for the sections */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow effect */
+}
+
+section h1 {
+    font-size: 28px; /* Font size for the section headings */
+    color: #333; /* Dark text color for headings */
+    margin-bottom: 15px; /* Adds space below the section heading */
+}
+
+section ul {
+    list-style-type: none; /* Removes bullets from the list */
+    padding-left: 0; /* Removes default padding */
+}
+
+section ul li {
+    font-size: 16px; /* Sets font size for list items */
+    margin-bottom: 10px; /* Adds space between list items */
+}

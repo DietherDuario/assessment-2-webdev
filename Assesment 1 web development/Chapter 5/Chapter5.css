@@ -1,0 +1,27 @@
+/* Chapter5.css */
+
+/* Style for the body to center content */
+body {
+  font-family: Arial, sans-serif; /* Use Arial font */
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-color: #f4f4f4; /* Light background */
+}
+
+/* Container to center the video */
+.video-container {
+  width: 80%; /* Width of the video container (can adjust based on your video size) */
+  max-width: 800px; /* Maximum width for the container */
+  text-align: center; /* Center video horizontally */
+  margin: 0 auto; /* Center the container */
+}
+
+video {
+  width: 100%; /* Make the video take up 100% of the container's width */
+  height: auto; /* Maintain aspect ratio */
+  border: 1px solid #ddd; /* Optional: Add a border around the video */
+}

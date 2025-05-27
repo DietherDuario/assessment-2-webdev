@@ -1,0 +1,69 @@
+/* ===== Global Styles ===== */
+body {
+    font-family: Arial, sans-serif; /* Sets a clean and readable font */
+    background-color: #f4f4f4; /* Light gray background for readability */
+    color: #333; /* Dark gray text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== Navigation Bar Styles ===== */
+nav {
+    background-color: #333; /* Dark background for navbar */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none; /* Removes default bullet points */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block; /* Arranges items in a row */
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff; /* White text for contrast */
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 15px;
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Slightly lighter gray on hover */
+    border-radius: 5px; /* Rounded corners for a modern look */
+}
+
+/* ===== Section Styles ===== */
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff; /* White background for content areas */
+    border-radius: 8px; /* Soft rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* ===== Image Styling (Handles Large Images) ===== */
+.page-image {
+    display: block;
+    width: 100%; /* Makes image responsive */
+    max-width: 600px; /* Prevents images from getting too large */
+    height: auto; /* Maintains aspect ratio */
+    margin: 20px auto; /* Centers the image */
+    border-radius: 10px; /* Rounded corners for a polished look */
+    object-fit: contain; /* Ensures the entire image is visible */
+}
+
+/* ===== Footer Image Styling ===== */
+.footer-image {
+    display: block;
+    width: 100%;
+    max-width: 800px; /* Limits width to avoid stretching */
+    height: auto;
+    margin: 20px auto;
+    object-fit: cover; /* Ensures the image fits well */
+}

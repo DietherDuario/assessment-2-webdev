@@ -1,0 +1,47 @@
+
+
+body {
+    background-color: #b3e6ff;
+}
+
+h1 {
+	text-align: center;
+	background-color: #70bcff;
+}
+
+h2 {
+	text-align: center;
+	background-color:#70bcff;
+}
+
+p {
+	text-align: center;
+}
+
+#Sinigang {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+#Final {
+	font-weight:bold;
+	background-color: #70bcff;
+}
+
+#cooking {
+	magin-left: auto;
+	margin-right: auto;
+	width: 25%;
+	height: 25%;
+}
+
+footer {
+	background-color: #70bcff;
+	text-align:center;
+}
+
+	

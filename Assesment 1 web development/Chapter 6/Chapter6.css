@@ -1,0 +1,73 @@
+/* === General body styling === */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;              /* Center horizontally */
+  justify-content: center;   /* Center horizontally */
+  align-items: center;       /* Center vertically */
+  height: 100vh;             /* Full screen height */
+  background-color: #f0f0f0; /* Light gray background */
+}
+
+/* === Calculator container === */
+.calculator-container {
+  background-color: #ffffff;      /* White box */
+  padding: 20px;
+  width: 300px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); /* Very light shadow */
+  text-align: center;
+}
+
+/* === Heading === */
+h1 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* === Label styling === */
+label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: left;
+  color: #555;
+  font-size: 14px;
+}
+
+/* === Input fields === */
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* === Button styling === */
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #007bff; /* Simple blue */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* === Result text === */
+#totalCost {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #333;
+}
